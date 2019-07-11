@@ -1,7 +1,0 @@
-FROM ubuntu:14.04
-RUN apt-get update
-RUN apt-get install -y nodejs npm ipython ipython-notebook libzmq3-dev
-RUN ln -s $(which nodejs) /bin/node
-RUN npm install -g ijavascript
-CMD ijs --ip=*
-EXPOSE 8888
